@@ -45,6 +45,10 @@ class AnotherFeatureContext ...
 
 Copyright (c) 2014 Marcin Dryka (drymek).
 
+## Thanks
+
+Extension is based on a solution developed by [Przemysław Piechota (kibao)](https://gist.github.com/kibao) in [gist](https://gist.github.com/drymek/9539dc04b44adb810471).
+
 ## Contributors
 
 * Marcin Dryka [drymek](http://github.com/drymek) [lead developer]
