@@ -1,0 +1,27 @@
+{
+    "name": "codifico/parameter-bag-extension",
+    "type": "behat-extension",
+    "description": "Parameter bag extension for Behat",
+    "keywords": ["codifico", "behat", "bdd", "parameter", "bag"],
+    "homepage": "http://codifico.pl",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Marcin Dryka",
+            "email": "marcin@codifico.pl"
+        }
+    ],
+
+    "require": {
+        "php":                       ">=5.3.3",
+        "behat/behat":               "~3.0,>=3.0.4"
+    },
+
+    "require-dev": {
+        "phpspec/phpspec":               "~2.0",
+    },
+
+    "autoload": {
+        "psr-0": { "Codifico\\ParameterBagExtension": "src/" }
+    }
+}
