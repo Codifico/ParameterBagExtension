@@ -1,6 +1,6 @@
 <?php
 
-namespace Codifico\ParametersBagExtension\Context;
+namespace Codifico\ParameterBagExtension\Context;
 
 use Behat\Behat\Context\Context;
 use Codifico\ParameterBagExtension\Bag\ParameterBagInterface;

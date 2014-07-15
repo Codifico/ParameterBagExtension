@@ -40,7 +40,7 @@ class ParameterBagAwareInitializer implements ContextInitializer
         return true;
       }
     }
-
+ 
     return false;
   }
 }

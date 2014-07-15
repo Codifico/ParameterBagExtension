@@ -11,6 +11,9 @@ class InMemoryParameterBag implements ParameterBagInterface {
   }
 
   public function get($name) {
-    return $this->bag[$name];
+    if (isset($this->bag[$name])) {
+        return $this->bag[$name];
+    }
+    throw new \Exception(sprintf('Parameter %s not set', $name));
   }
 }
