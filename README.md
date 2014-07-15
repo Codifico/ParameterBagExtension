@@ -51,7 +51,7 @@ class AnotherFeatureContext ...
 
 ## Copyright
 
-Copyright (c) 2014 Marcin Dryka (drymek).
+Copyright (c) 2014 Marcin Dryka (drymek). See LICENSE for details.
 
 ## Thanks
 
