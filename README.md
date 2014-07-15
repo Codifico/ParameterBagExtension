@@ -21,10 +21,16 @@ php composer.phar require codifico/parameter-bag-extension:dev-master --dev
 
 ## Usage
 
-Prepare data:
+Prepare parameter:
 
 ```php
-class FeatureContext ...
+<?php
+        
+use Behat\Behat\Context\SnippetAcceptingContext;
+use Behat\Gherkin\Node\PyStringNode;
+use Codifico\ParameterBagExtension\Context\ParameterBagDictionary;
+
+class FeatureContext implements SnippetAcceptingContext
 {
     use ParameterBagDictionary;
 
@@ -36,15 +42,22 @@ class FeatureContext ...
         // ... create entity
         $this->getParameterBag()->set($entityName, $entity);
     }
+}
 ```
 
-Use the data:
+Use the parameter:
 
 ```php
-class AnotherFeatureContext ...
+<?php
+        
+use Behat\Behat\Context\SnippetAcceptingContext;
+use Behat\Gherkin\Node\PyStringNode;
+use Codifico\ParameterBagExtension\Context\ParameterBagDictionary;
+
+class AnotherFeatureContext implements SnippetAcceptingContext
 {
     use ParameterBagDictionary;
-
+    
     /**
      * @Then I need entity :entityName
      */
@@ -52,6 +65,7 @@ class AnotherFeatureContext ...
     {
       $entity = $this->getParameterBag()->get($entityName);
     }
+}
 ```
 
 ## Copyright
