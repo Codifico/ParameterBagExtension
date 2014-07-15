@@ -8,6 +8,12 @@ Provides parameter bag for Behat contexts:
 
 * ParameterBagAwareContext provides an parameter bag instance for contexts
 
+## Instalation
+
+```bash
+php composer.phar require codifico/parameter-bag-extension:dev-master --dev
+```
+
 ## Usage
 
 Prepare data:
