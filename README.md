@@ -3,6 +3,7 @@
 for Behat 3.x
 [![Build Status](https://travis-ci.org/Codifico/ParameterBagExtension.svg?branch=master)](https://travis-ci.org/Codifico/ParameterBagExtension)
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/Codifico/ParameterBagExtension/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/Codifico/ParameterBagExtension/?branch=master)
+[![SensioLabsInsight](https://insight.sensiolabs.com/projects/486c4839-73b1-400e-ae5f-456c82498386/mini.png)](https://insight.sensiolabs.com/projects/486c4839-73b1-400e-ae5f-456c82498386)
 
 Provides parameter bag for Behat contexts:
 
