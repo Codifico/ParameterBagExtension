@@ -10,7 +10,7 @@ branches:
 
 before_script:
   - composer install --prefer-source --no-interaction --no-progress
-  - export PATH=./vendor/bin:$PATH
+  - export PATH=./bin:$PATH
 
 script:
   - phpspec run -f pretty --no-interaction
