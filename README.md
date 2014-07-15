@@ -1,7 +1,7 @@
 # ParameterBagExtension
 
 for Behat 3.x
-[![Build Status](https://travis-ci.org/Codifico/ParameterBugExtension.svg?branch=master)](https://travis-ci.org/Codifico/ParameterBagExtension)
+[![Build Status](https://travis-ci.org/Codifico/ParameterBagExtension.svg?branch=master)](https://travis-ci.org/Codifico/ParameterBagExtension)
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/Codifico/ParameterBagExtension/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/Codifico/ParameterBagExtension/?branch=master)
 
 Provides parameter bag for Behat contexts:
