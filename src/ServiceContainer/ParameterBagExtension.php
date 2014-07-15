@@ -9,8 +9,10 @@ use Symfony\Component\Config\Definition\Builder\ArrayNodeDefinition;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\DependencyInjection\Definition;
 
-class ParameterBagExtension implements ExtensionInterface {
-  public function getConfigKey() {
+class ParameterBagExtension implements ExtensionInterface
+{
+  public function getConfigKey()
+  {
     return 'parameter_bag';
   }
 
@@ -36,14 +38,14 @@ class ParameterBagExtension implements ExtensionInterface {
 
   public function load(ContainerBuilder $container, array $config)
   {
-    $parameterBag = new $config['parameter_bag']['class'];  
+    $parameterBag = new $config['parameter_bag']['class'];
 
     $definition = new Definition('Codifico\ParameterBagExtension\Context\Initializer\ParameterBagAwareInitializer', array(
       $parameterBag
     ));
-    
+
     $definition->addTag(ContextExtension::INITIALIZER_TAG, array('priority' => 0));
-    
+
     $container->setDefinition('parameter_bag_extension.context_initializer.parameter_bag_aware', $definition);
   }
 

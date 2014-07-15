@@ -4,7 +4,7 @@ namespace Codifico\ParameterBagExtension\Context;
 
 use Codifico\ParameterBagExtension\Bag\ParameterBagInterface;
 
-trait ParameterBagDictionary 
+trait ParameterBagDictionary
 {
   private $parameterBag;
 

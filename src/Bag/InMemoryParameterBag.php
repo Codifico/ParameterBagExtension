@@ -2,15 +2,17 @@
 
 namespace Codifico\ParameterBagExtension\Bag;
 
-class InMemoryParameterBag implements ParameterBagInterface {
-  
+class InMemoryParameterBag implements ParameterBagInterface
+{
   private $bag = [];
 
-  public function set($name, $value) {
+  public function set($name, $value)
+  {
     $this->bag[$name] = $value;
   }
 
-  public function get($name) {
+  public function get($name)
+  {
     if (isset($this->bag[$name])) {
         return $this->bag[$name];
     }

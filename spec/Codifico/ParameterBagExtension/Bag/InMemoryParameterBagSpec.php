@@ -3,7 +3,6 @@
 namespace spec\Codifico\ParameterBagExtension\Bag;
 
 use PhpSpec\ObjectBehavior;
-use Prophecy\Argument;
 
 class InMemoryParameterBagSpec extends ObjectBehavior
 {
