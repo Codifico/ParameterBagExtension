@@ -20,6 +20,16 @@ Provides parameter bag for Behat contexts:
 php composer.phar require codifico/parameter-bag-extension:dev-master --dev
 ```
 
+Activate extension by specifying its class in your behat.yml:
+
+```yml
+# behat.yml
+default:
+    # ...
+    extensions:
+        Codifico\ParameterBagExtension\ServiceContainer\ParameterBagExtension: ~
+```
+
 ## Usage
 
 Prepare parameter:
