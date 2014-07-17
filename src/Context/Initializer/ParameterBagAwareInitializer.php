@@ -9,38 +9,38 @@ use Codifico\ParameterBagExtension\Bag\ParameterBagInterface;
 
 class ParameterBagAwareInitializer implements ContextInitializer
 {
-  private $parameterBag;
+    private $parameterBag;
 
-  public function __construct(ParameterBagInterface $parameterBag)
-  {
-    $this->parameterBag = $parameterBag;
-  }
-
-  public function initializeContext(Context $context)
-  {
-    if (!$context instanceof ParameterBagAwareContext && !$this->usesParameterBag($context)) {
-      return;
+    public function __construct(ParameterBagInterface $parameterBag)
+    {
+        $this->parameterBag = $parameterBag;
     }
 
-    $context->setParameterBag($this->parameterBag);
-  }
+    public function initializeContext(Context $context)
+    {
+        if (!$context instanceof ParameterBagAwareContext && !$this->usesParameterBag($context)) {
+            return;
+        }
 
-  /**
-   * Checks whether the context uses the ParameterBagDictionary trait.
-   *
-   * @param Context $context
-   *
-   * @return boolean
-   */
-  private function usesParameterBag(Context $context)
-  {
-    $refl = new \ReflectionObject($context);
-    if (method_exists($refl, 'getTraitNames')) {
-      if (in_array('Codifico\\ParameterBagExtension\\Context\\ParameterBagDictionary', $refl->getTraitNames())) {
-        return true;
-      }
+        $context->setParameterBag($this->parameterBag);
     }
 
-    return false;
-  }
+    /**
+    * Checks whether the context uses the ParameterBagDictionary trait.
+    *
+    * @param Context $context
+    *
+    * @return boolean
+    */
+    private function usesParameterBag(Context $context)
+    {
+        $refl = new \ReflectionObject($context);
+        if (method_exists($refl, 'getTraitNames')) {
+            if (in_array('Codifico\\ParameterBagExtension\\Context\\ParameterBagDictionary', $refl->getTraitNames())) {
+                return true;
+            }
+        }
+
+        return false;
+    }
 }

@@ -6,15 +6,15 @@ use Codifico\ParameterBagExtension\Bag\ParameterBagInterface;
 
 trait ParameterBagDictionary
 {
-  private $parameterBag;
+    private $parameterBag;
 
-  public function setParameterBag(ParameterBagInterface $parameterBag)
-  {
-    $this->parameterBag = $parameterBag;
-  }
+    public function setParameterBag(ParameterBagInterface $parameterBag)
+    {
+        $this->parameterBag = $parameterBag;
+    }
 
-  public function getParameterBag()
-  {
-    return $this->parameterBag;
-  }
+    public function getParameterBag()
+    {
+        return $this->parameterBag;
+    }
 }

@@ -7,5 +7,5 @@ use Codifico\ParameterBagExtension\Bag\ParameterBagInterface;
 
 interface ParameterBagAwareContext extends Context
 {
-  public function setParameterBag(ParameterBagInterface $parameterBag);
+    public function setParameterBag(ParameterBagInterface $parameterBag);
 }

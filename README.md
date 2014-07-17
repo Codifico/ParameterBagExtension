@@ -64,7 +64,7 @@ class AnotherFeatureContext implements SnippetAcceptingContext
      */
     public function iNeedEntity($entityName)
     {
-      $entity = $this->getParameterBag()->get($entityName);
+        $entity = $this->getParameterBag()->get($entityName);
     }
 }
 ```
