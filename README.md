@@ -90,7 +90,7 @@ You can also use it as a placeholder bag. To switch to a placeholder bag just
      extensions:
          Codifico\ParameterBagExtension\ServiceContainer\ParameterBagExtension:
             parameter_bag:
-                class: Codifico\ParameterBagExtension\Bag\PlaceholderBag
+                class: Codifico\ParameterBagExtension\Bag\InMemoryPlaceholderBag
 ```
 
 ### Replacing placeholders
@@ -114,7 +114,7 @@ class AnotherFeatureContext implements SnippetAcceptingContext
          * $message = 'User USER_ID is active'
          * and placeholder bag contains value 123 under key USER_ID
          */
-        $this->getParameterBag()->replace($message)
+        $message = $this->getParameterBag()->replace($message)
 
         // $message = 'User 123 is active'
     }
