@@ -4,7 +4,7 @@ namespace spec\Codifico\ParameterBagExtension\Bag;
 
 use PhpSpec\ObjectBehavior;
 
-class PlaceholderBagSpec extends ObjectBehavior
+class InMemoryPlaceholderBagSpec extends ObjectBehavior
 {
     function it_should_be_a_parameter_bag()
     {
