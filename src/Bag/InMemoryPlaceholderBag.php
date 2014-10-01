@@ -2,7 +2,7 @@
 
 namespace Codifico\ParameterBagExtension\Bag;
 
-class PlaceholderBag extends InMemoryParameterBag
+class InMemoryPlaceholderBag extends InMemoryParameterBag
 {
     /**
      * {@inheritdoc}
