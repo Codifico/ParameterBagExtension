@@ -25,4 +25,9 @@ class InMemoryParameterBag implements ParameterBagInterface
 
         throw new \Exception(sprintf('Parameter %s not set', $name));
     }
+
+    public function getAll()
+    {
+        return $this->bag;
+    }
 }
